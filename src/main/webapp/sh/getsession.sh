@@ -1,0 +1,1 @@
+curl -X POST "https://us-south.dynamic-dashboard-embedded.cloud.ibm.com/daas/v1/session" -H "accept: application/json" -u b8c5ffc5-50dc-4149-8fb6-7b233e63a99d:62405c64ded7ff3c0c7ea9ccbdea9a3179e2fdc1 -H  "Content-Type: application/json" -d "{  \"expiresIn\": 3600,  \"webDomain\": \"http://localhost:8080\"}"

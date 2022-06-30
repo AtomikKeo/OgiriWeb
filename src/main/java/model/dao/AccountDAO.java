@@ -54,7 +54,7 @@ public class AccountDAO {
 		
 	}
 	
-	public int insert (Account accout) throws SQLException{
+	public int insert(Account accout) throws SQLException{
 		String sql = "INSERT INTO ACCOUNT(ID, NAME, PASS, DISCORD_ID) VALUES(?, ?, ?, ?)";
 		PreparedStatement pStmt = con.prepareStatement(sql);
 		pStmt.setString(1, accout.getId());
@@ -66,7 +66,7 @@ public class AccountDAO {
 		return r;
 	}
 	
-	public int update (Account accout) throws SQLException{
+	public int update(Account accout) throws SQLException{
 		String sql = "UPDATE ACCOUNT SET NAME = ?, PASS = ?, DISCORD_ID = ?"
 				+ " WHERE ID = ?";
 		PreparedStatement pStmt = con.prepareStatement(sql);
